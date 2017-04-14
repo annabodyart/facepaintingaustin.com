@@ -1,0 +1,75 @@
+---
+layout: page
+title: Airspace
+permalink: /
+
+images:
+ - image_path: /img/home/1.jpg
+   class: Facepainting
+   title: Facepainting
+   description:
+ - image_path: /img/home/2.jpg
+   class: AirbrushTattoos
+   title: Airbrush Tattoos
+   description:
+ - image_path: /img/home/3.jpg
+   class: GlitterTattoos
+   title: Glitter Tattoos
+   description:
+---
+
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>What are you looking for today?</h2>
+        <p>Have your kids enjoys the fun of colorful pieces of art at your unique party or event.</p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-12 col-md-offset-0">
+        <div class="portfolio-contant">
+          <ul id="portfolio-contant-active">
+            {% for image in page.images %}
+              <li class="mix {{ image.class }}">
+                <a href="/work/#{{ image.class }}">
+                  <img src="{{ site.baseurl }}{{ image.image_path }}" alt="">
+                  <div class="img-center-label">
+                    <div class="position-center">
+                      <h2>{{ image.title }}</h2>
+                      <p>{{ image.description}}</p>
+
+                    </div>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <ul class="social-icons bright">
+            <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-facebook"></i></a>
+            </li>
+          </ul>
+          <a class="btn btn-default btn-call-to-action" href="#" >Check my page for corporate events, bodypaintings and wall decor!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
