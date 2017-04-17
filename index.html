@@ -16,24 +16,76 @@ images:
    class: GlitterTattoos
    title: Glitter Tattoos
    description:
+images_extra:
+ - image_path: /img/home/belly.jpg
+   class: BellyPainting
+   title: Belly Painting
+   description:
+ - image_path: /img/home/wall.jpg
+   class: WallDecor
+   title: Wall Decor
+   description:
+ - image_path: /img/home/more.jpg
+   class: More
+   title: More
+   description:
 ---
+
+<script>
+  // var main_images = true;
+  function swap_images(){
+    $("#first").toggle();
+    $("#second").toggle();
+  };
+</script>
 
 <!-- Wrapper Start -->
 <section id="intro">
   <div class="container">
     <div class="row">
       <div class="section-title text-center">
-        <h2>What are you looking for today?</h2>
-        <p>Have your kids enjoys the fun of colorful pieces of art at your unique party or event.</p>
+        <h2></h2>
+        <p>Kids will love the fun of colorful pieces of art at your party or event.</p>
       </div>
     </div>
     <div class="row">
-
+      <div class="col-md-1 col-md-offset-0" onclick="swap_images();">
+        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> more
+      </div>
+      <div class="col-md-10 col-md-offset-0"></div>
+      <div class="col-md-1 col-md-offset-0" onclick="swap_images();">
+        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>more
+      </div>
+    </div>
+    <div id="first" class="row">
       <div class="col-md-12 col-md-offset-0">
         <div class="portfolio-contant">
           <ul id="portfolio-contant-active">
             {% for image in page.images %}
               <li class="mix {{ image.class }}">
+                <a href="/work/#{{ image.class }}">
+                  <img src="{{ site.baseurl }}{{ image.image_path }}" alt="">
+                  <div class="img-center-label">
+                    <div class="position-center">
+                      <h2>{{ image.title }}</h2>
+                      <p>{{ image.description}}</p>
+
+                    </div>
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="second" class="row" style="display: none;">
+      <div class="col-md-12 col-md-offset-0">
+        <div class="portfolio-contant">
+          <ul id="portfolio-contant-active">
+            {% for image in page.images_extra %}
+              <li class="mix {{ image.class }}" style="display: inline-block;">
                 <a href="/work/#{{ image.class }}">
                   <img src="{{ site.baseurl }}{{ image.image_path }}" alt="">
                   <div class="img-center-label">
