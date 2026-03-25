@@ -1,127 +1,1787 @@
----
-layout: page
-title: Airspace
-permalink: /
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna Body Art | Award-Winning Face &amp; Body Painting in Austin, TX</title>
+<meta name="description" content="Anna Body Art offers award-winning face painting, body painting, airbrush tattoos, glitter tattoos, belly painting, and murals in Austin, TX. 4th at World Bodypainting Championship. Book today!">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.facepaintingaustin.com/">
 
-images:
- - image_path: /img/home/1.jpg
-   class: Facepainting
-   title: Facepainting
-   description:
- - image_path: /img/home/2.jpg
-   class: AirbrushTattoos
-   title: Airbrush Tattoos
-   description:
- - image_path: /img/home/3.jpg
-   class: GlitterTattoos
-   title: Glitter Tattoos
-   description:
-images_extra:
- - image_path: /img/home/belly.jpg
-   class: BellyPainting
-   title: Belly Painting
-   description:
- - image_path: /img/home/wall.jpg
-   class: WallDecor
-   title: Wall Decor
-   description:
- - image_path: /img/home/more.jpg
-   class: More
-   title: More
-   description:
----
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Anna Body Art | Award-Winning Face &amp; Body Painting in Austin, TX">
+<meta property="og:description" content="Award-winning face &amp; body painting for parties, corporate events, festivals, and more. 4th at World Bodypainting Championship. Based in Austin, TX.">
+<meta property="og:url" content="https://www.facepaintingaustin.com/">
+<meta property="og:image" content="https://www.facepaintingaustin.com/img/og-preview.jpg">
+<meta property="og:site_name" content="Anna Body Art">
+<meta property="og:locale" content="en_US">
 
-<script>
-  // var main_images = true;
-  function swap_images(){
-    $("#first").toggle();
-    $("#second").toggle();
-  };
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anna Body Art | Award-Winning Face &amp; Body Painting in Austin, TX">
+<meta name="twitter:description" content="Award-winning face &amp; body painting for parties, corporate events, festivals, and more. Based in Austin, TX.">
+<meta name="twitter:image" content="https://www.facepaintingaustin.com/img/og-preview.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Anna Body Art",
+  "description": "Award-winning face painting, body painting, airbrush tattoos, glitter tattoos, belly painting, and murals in Austin, TX.",
+  "url": "https://www.facepaintingaustin.com",
+  "telephone": "+17374842082",
+  "email": "annabodyart@gmail.com",
+  "image": "https://www.facepaintingaustin.com/img/og-preview.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.2672,
+    "longitude": -97.7431
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Austin"
+  },
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.instagram.com/annabodyart/",
+    "https://www.facebook.com/anna.chapovalov"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Face Painting" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body Painting" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airbrush Tattoos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Glitter Tattoos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Belly Painting" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Murals &amp; Wall Art" } }
+  ]
+}
 </script>
 
-<!-- Wrapper Start -->
-<section id="intro">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2></h2>
-        <p>Kids will love the fun of colorful pieces of art at your party or event.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1 col-md-offset-0" onclick="swap_images();">
-        <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> more
-      </div>
-      <div class="col-md-10 col-md-offset-0"></div>
-      <div class="col-md-1 col-md-offset-0" onclick="swap_images();">
-        <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>more
-      </div>
-    </div>
-    <div id="first" class="row">
-      <div class="col-md-12 col-md-offset-0">
-        <div class="portfolio-contant">
-          <ul id="portfolio-contant-active">
-            {% for image in page.images %}
-              <li class="mix {{ image.class }}">
-                <a href="/work/#{{ image.class }}">
-                  <img src="{{ site.baseurl }}{{ image.image_path }}" alt="">
-                  <div class="img-center-label">
-                    <div class="position-center">
-                      <h2>{{ image.title }}</h2>
-                      <p>{{ image.description}}</p>
+<!-- Fonts: preconnect then async load -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;600;700&display=swap"></noscript>
 
-                    </div>
-                  </div>
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
+<!--
+=======================================================
+  IMAGE PLACEHOLDER INDEX — replace before launch
+=======================================================
+  All image src values use /img/placeholder-XXX.jpg paths.
+  When Anna provides real images, replace each path below.
+
+  HERO GRID (right column, 6 cells):
+    /img/placeholder-hero-1.jpg   — tall, face painting portrait
+    /img/placeholder-hero-2.jpg   — square, event scene
+    /img/placeholder-hero-3.jpg   — square, airbrush tattoo
+    /img/placeholder-hero-4.jpg   — tall, body painting competition
+    /img/placeholder-hero-5.jpg   — square, belly painting
+    /img/placeholder-hero-6.jpg   — square, creative face art
+
+  GALLERY (20 items):
+    Face Painting (8):
+      /img/placeholder-fp-1.jpg through /img/placeholder-fp-8.jpg
+    Body Art (3):
+      /img/placeholder-body-1.jpg through /img/placeholder-body-3.jpg
+    Airbrush Tattoos (3):
+      /img/placeholder-airbrush-1.jpg through /img/placeholder-airbrush-3.jpg
+    Belly Painting (3):
+      /img/placeholder-belly-1.jpg through /img/placeholder-belly-3.jpg
+    Murals (3):
+      /img/placeholder-mural-1.jpg through /img/placeholder-mural-3.jpg
+
+  SERVICES (6 card images):
+    /img/placeholder-svc-facepaint.jpg
+    /img/placeholder-svc-bodypaint.jpg
+    /img/placeholder-svc-airbrush.jpg
+    /img/placeholder-svc-belly.jpg
+    /img/placeholder-svc-mural.jpg
+    /img/placeholder-svc-events.jpg
+
+  ABOUT (1 portrait):
+    /img/placeholder-anna-portrait.jpg
+
+  OG / TWITTER preview:
+    /img/og-preview.jpg            — 1200×630px, striking image of Anna's work
+=======================================================
+-->
+
+<style>
+/* =====================================================
+   BASE RESET & VARIABLES
+   ===================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --cream:       #FDF6F0;
+  --warm-white:  #FFFAF5;
+  --blush:       #F4C2C2;
+  --rose:        #E8A0BF;
+  --magenta:     #C850C0;
+  --violet:      #7B2D8E;
+  --deep:        #2D1B36;
+  --gold:        #D4A853;
+  --teal:        #2EC4B6;
+  --coral:       #FF6B6B;
+  --text:        #3A2845;
+  --text-light:  #7A6885;
+}
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+.script {
+  font-family: 'Caveat', cursive;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================================================
+   SKIP NAV — accessibility
+   ===================================================== */
+.skip-nav {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background: var(--violet);
+  color: #fff;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-nav:focus {
+  top: 0;
+}
+
+/* =====================================================
+   FOCUS STYLES — accessibility
+   ===================================================== */
+:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* =====================================================
+   DECORATIVE BLOB
+   ===================================================== */
+.paint-blob {
+  position: absolute;
+  border-radius: 50% 40% 60% 45% / 55% 50% 45% 50%;
+  filter: blur(40px);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* =====================================================
+   NAV
+   ===================================================== */
+.site-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(253, 246, 240, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(200, 80, 192, 0.08);
+  transition: padding 0.4s, box-shadow 0.4s;
+}
+.site-nav.scrolled {
+  padding: 12px 40px;
+  box-shadow: 0 4px 30px rgba(45, 27, 54, 0.06);
+}
+
+.nav-logo {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--violet);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.nav-logo:hover,
+.nav-logo:focus {
+  color: var(--magenta);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a:focus {
+  color: var(--magenta);
+}
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, var(--magenta), var(--violet));
+  color: #fff !important;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.nav-cta:hover,
+.nav-cta:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(200, 80, 192, 0.35);
+  color: #fff !important;
+}
+.nav-cta svg { width: 14px; height: 14px; }
+
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =====================================================
+   SHARED BUTTON STYLES
+   ===================================================== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 36px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--magenta), var(--violet));
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 30px rgba(200, 80, 192, 0.3);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(200, 80, 192, 0.45);
+  color: #fff;
+}
+.btn-primary svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 32px;
+  border-radius: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--rose);
+  color: var(--violet);
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+}
+
+/* =====================================================
+   SECTION HEADER (shared)
+   ===================================================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-header .overline {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: var(--magenta);
+  display: block;
+  margin-bottom: 8px;
+}
+.section-header h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: var(--deep);
+  line-height: 1.2;
+}
+
+/* =====================================================
+   HERO
+   ===================================================== */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 60px 80px;
+  position: relative;
+  z-index: 2;
+}
+.hero-tag {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  color: var(--magenta);
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-size: clamp(38px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 1.08;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--deep) 0%, var(--violet) 50%, var(--magenta) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-desc {
+  font-size: 17px;
+  color: var(--text-light);
+  max-width: 440px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Hero image grid */
+.hero-visual {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--blush), var(--rose));
+}
+.hero-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+  padding: 8px;
+  height: 100%;
+  min-height: 100vh;
+}
+.img-cell {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: var(--blush);
+}
+.img-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.img-cell:hover img {
+  transform: scale(1.05);
+}
+.img-cell.tall {
+  grid-row: span 2;
+}
+
+/* =====================================================
+   CREDENTIALS RIBBON
+   ===================================================== */
+.ribbon {
+  background: var(--deep);
+  padding: 28px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+.ribbon-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.ribbon-item svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--gold);
+}
+.ribbon-item strong {
+  color: var(--gold);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+}
+
+/* =====================================================
+   GALLERY
+   ===================================================== */
+.gallery-section {
+  padding: 100px 40px;
+  position: relative;
+}
+
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 2px solid rgba(200, 80, 192, 0.18);
+  background: transparent;
+  color: var(--text-light);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn.active {
+  background: var(--magenta);
+  border-color: var(--magenta);
+  color: #fff;
+}
+
+/* Masonry grid */
+.masonry {
+  columns: 4;
+  column-gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s;
+  background: var(--blush);
+}
+.masonry-item:hover,
+.masonry-item:focus-within {
+  transform: translateY(-6px);
+}
+.masonry-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s;
+}
+.masonry-item:hover img,
+.masonry-item:focus-within img {
+  transform: scale(1.06);
+}
+.masonry-item .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(45, 27, 54, 0.72));
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.masonry-item:hover .overlay,
+.masonry-item:focus-within .overlay {
+  opacity: 1;
+}
+.overlay span {
+  color: #fff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.masonry-item.is-hidden {
+  display: none;
+}
+
+/* =====================================================
+   SERVICES
+   ===================================================== */
+.services-section {
+  padding: 100px 40px;
+  background: var(--warm-white);
+  position: relative;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.service-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.4s, box-shadow 0.4s;
+  box-shadow: 0 4px 20px rgba(45, 27, 54, 0.05);
+}
+.service-card:hover,
+.service-card:focus {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 50px rgba(200, 80, 192, 0.13);
+}
+.card-img {
+  height: 220px;
+  overflow: hidden;
+  background: var(--blush);
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+.service-card:hover .card-img img,
+.service-card:focus .card-img img {
+  transform: scale(1.08);
+}
+.card-body {
+  padding: 24px;
+}
+.card-body h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--deep);
+}
+.card-body p {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.75;
+}
+.card-tags {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(200, 80, 192, 0.08);
+  color: var(--magenta);
+}
+
+/* =====================================================
+   ABOUT
+   ===================================================== */
+.about-outer {
+  padding: 60px 0 20px;
+}
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  align-items: center;
+}
+.about-img-wrap {
+  position: relative;
+}
+.about-img-shape {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(200, 80, 192, 0.15);
+  background: var(--blush);
+}
+.about-img-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-accent-blob {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  bottom: -20px;
+  left: -20px;
+  background: linear-gradient(135deg, var(--gold), var(--coral));
+  opacity: 0.6;
+  filter: blur(2px);
+}
+.about-text .overline {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  color: var(--magenta);
+  display: block;
+  margin-bottom: 8px;
+}
+.about-text h2 {
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--deep);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.about-text p {
+  color: var(--text-light);
+  font-size: 15px;
+  margin-bottom: 16px;
+  line-height: 1.85;
+}
+.about-text .highlight {
+  color: var(--violet);
+  font-weight: 600;
+}
+.about-press {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 8px;
+  font-style: normal;
+}
+
+/* =====================================================
+   REVIEWS
+   ===================================================== */
+.reviews-section {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, var(--deep), #3D1F4E);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.reviews-section .section-header .overline { color: var(--gold); }
+.reviews-section .section-header h2 { color: #fff; }
+.reviews-track {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.review-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 32px 28px;
+  flex: 1 1 300px;
+  max-width: 340px;
+  text-align: left;
+  transition: transform 0.3s, background 0.3s;
+}
+.review-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.review-stars {
+  color: var(--gold);
+  font-size: 17px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.review-card blockquote {
+  font-size: 14px;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.82);
+  font-style: italic;
+  margin-bottom: 18px;
+  border: none;
+  padding: 0;
+}
+.review-author {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.review-source {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 2px;
+}
+
+/* =====================================================
+   BOOKING CTA
+   ===================================================== */
+.booking-section {
+  padding: 100px 40px;
+  position: relative;
+}
+.booking-card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 32px;
+  padding: 64px 56px;
+  box-shadow: 0 20px 80px rgba(45, 27, 54, 0.09);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.booking-card::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blush), var(--rose));
+  opacity: 0.35;
+  pointer-events: none;
+}
+.booking-card::after {
+  content: '';
+  position: absolute;
+  bottom: -40px; left: -40px;
+  width: 150px; height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  opacity: 0.2;
+  pointer-events: none;
+}
+.booking-card .section-header {
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.booking-card .section-header p {
+  color: var(--text-light);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 12px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.booking-cta-wrap {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 28px;
+}
+.booking-cta-wrap .btn-primary {
+  font-size: 17px;
+  padding: 18px 44px;
+}
+.booking-contact {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.9;
+}
+.booking-contact a {
+  color: var(--magenta);
+  font-weight: 600;
+  text-decoration: none;
+}
+.booking-contact a:hover,
+.booking-contact a:focus {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.site-footer {
+  padding: 56px 40px 32px;
+  background: var(--deep);
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 13px;
+}
+.footer-logo {
+  font-family: 'Caveat', cursive;
+  font-size: 34px;
+  color: #fff;
+  display: block;
+  margin-bottom: 16px;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+.footer-social a:hover,
+.footer-social a:focus {
+  background: var(--magenta);
+  color: #fff;
+}
+.footer-social a svg { width: 18px; height: 18px; }
+.footer-meta { margin-bottom: 8px; line-height: 1.9; }
+.site-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  text-decoration: underline;
+}
+
+/* =====================================================
+   LIGHTBOX
+   ===================================================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(45, 27, 54, 0.93);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 82vh;
+  border-radius: 16px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55);
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px; right: 20px;
+  width: 48px; height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.lightbox-close:hover,
+.lightbox-close:focus {
+  background: rgba(255, 255, 255, 0.22);
+}
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px; height: 52px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+.lightbox-nav:hover,
+.lightbox-nav:focus {
+  background: rgba(255, 255, 255, 0.22);
+}
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.lightbox-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgba(45, 27, 54, 0.65);
+  padding: 8px 24px;
+  border-radius: 30px;
+}
+
+/* =====================================================
+   ANIMATION — fade-up on scroll
+   ===================================================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-14px) rotate(2deg); }
+}
+.float       { animation: float 6s ease-in-out infinite; }
+.float-slow  { animation: float 8s ease-in-out 1s infinite; }
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+@media (max-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .masonry { columns: 3; }
+}
+
+@media (max-width: 900px) {
+  /* Hero collapses to single column */
+  .hero { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .hero-content {
+    padding: 120px 28px 64px;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+
+  /* About stacks */
+  .about-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 60px 28px;
+    gap: 40px;
+  }
+  .about-img-wrap { max-width: 340px; margin: 0 auto; }
+
+  /* Services single column */
+  .services-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+
+  /* Masonry 2 cols */
+  .masonry { columns: 2; }
+
+  /* Nav collapses */
+  .site-nav { padding: 14px 20px; }
+  .site-nav.scrolled { padding: 10px 20px; }
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(253, 246, 240, 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 16px;
+    border-bottom: 1px solid rgba(200, 80, 192, 0.1);
+    box-shadow: 0 8px 30px rgba(45, 27, 54, 0.08);
+    align-items: flex-start;
+  }
+  .nav-links.open { display: flex; }
+
+  /* Sections reduce padding */
+  .gallery-section  { padding: 64px 20px; }
+  .services-section { padding: 64px 20px; }
+  .reviews-section  { padding: 64px 20px; }
+  .booking-section  { padding: 64px 20px; }
+  .ribbon { gap: 20px; padding: 20px 24px; }
+  .booking-card { padding: 40px 28px; }
+}
+
+@media (max-width: 600px) {
+  .masonry { columns: 1; max-width: 420px; margin: 0 auto; }
+  .ribbon { gap: 14px; padding: 18px 16px; font-size: 12px; }
+  .ribbon-item strong { font-size: 13px; }
+  .hero h1 { font-size: clamp(34px, 10vw, 48px); }
+  .reviews-track { flex-direction: column; align-items: center; }
+  .review-card { max-width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- Skip navigation for keyboard/screen-reader users -->
+<a class="skip-nav" href="#main-content">Skip to main content</a>
+
+<!-- =====================================================
+     NAV
+     ===================================================== -->
+<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+  <a href="/" class="nav-logo" aria-label="Anna Body Art — home">Anna Body Art</a>
+
+  <button class="nav-toggle" id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-links" id="nav-menu">
+    <a href="#gallery">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#book" class="nav-cta">
+      <!-- envelope icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      Book Now
+    </a>
+  </div>
+</nav>
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+<main id="main-content">
+
+  <!-- ── HERO ─────────────────────────────────────────── -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <p class="hero-tag" aria-hidden="true">Award-winning body artist in Austin, TX</p>
+      <h1 id="hero-heading">Art That Lives<br>On You</h1>
+      <p class="hero-desc">From children's birthday parties to world championship stages — Anna brings color, joy, and internationally acclaimed artistry to every event she touches.</p>
+      <div class="hero-buttons">
+        <a href="#book" class="btn-primary">
+          <!-- calendar icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          Book Your Event
+        </a>
+        <a href="#gallery" class="btn-secondary">See My Work</a>
+      </div>
+    </div>
+
+    <!-- Image grid — purely decorative -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-img-grid">
+        <div class="img-cell tall">
+          <img src="/img/placeholder-hero-1.jpg" alt="" width="400" height="600">
+        </div>
+        <div class="img-cell">
+          <img src="/img/placeholder-hero-2.jpg" alt="" width="400" height="300">
+        </div>
+        <div class="img-cell">
+          <img src="/img/placeholder-hero-3.jpg" alt="" width="400" height="300">
+        </div>
+        <div class="img-cell tall">
+          <img src="/img/placeholder-hero-4.jpg" alt="" width="400" height="600">
+        </div>
+        <div class="img-cell">
+          <img src="/img/placeholder-hero-5.jpg" alt="" width="400" height="300">
+        </div>
+        <div class="img-cell">
+          <img src="/img/placeholder-hero-6.jpg" alt="" width="400" height="300">
         </div>
       </div>
     </div>
+  </section>
 
-    <div id="second" class="row" style="display: none;">
-      <div class="col-md-12 col-md-offset-0">
-        <div class="portfolio-contant">
-          <ul id="portfolio-contant-active">
-            {% for image in page.images_extra %}
-              <li class="mix {{ image.class }}" style="display: inline-block;">
-                <a href="/work/#{{ image.class }}">
-                  <img src="{{ site.baseurl }}{{ image.image_path }}" alt="">
-                  <div class="img-center-label">
-                    <div class="position-center">
-                      <h2>{{ image.title }}</h2>
-                      <p>{{ image.description}}</p>
-
-                    </div>
-                  </div>
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+  <!-- ── CREDENTIALS RIBBON ────────────────────────────── -->
+  <div class="ribbon" role="complementary" aria-label="Awards and notable clients">
+    <div class="ribbon-item">
+      <!-- trophy / medal icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <circle cx="12" cy="8" r="7"/>
+        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+      </svg>
+      <strong>4th Place</strong>&ensp;World Bodypainting Championship, Austria
+    </div>
+    <div class="ribbon-item">
+      <!-- globe icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      <strong>5th Place</strong>&ensp;International Festival, South Korea
+    </div>
+    <div class="ribbon-item">
+      <!-- star icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+      </svg>
+      <strong>1st Place</strong>&ensp;Texas Body Paint Festival
+    </div>
+    <div class="ribbon-item">
+      <!-- briefcase icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+      </svg>
+      <strong>Clients:</strong>&ensp;Google &middot; EA Games &middot; Warner Bros &middot; Westin &middot; Hilton
     </div>
   </div>
-</section>
 
-<!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <ul class="social-icons bright">
-            <li>
-              <a href="https://www.instagram.com/anna.chapovalov/" target="_blank"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/anna.chapovalov" target="_blank"><i class="fa fa-facebook"></i></a>
-            </li>
-          </ul>
-          <!-- <a class="btn btn-default btn-call-to-action" href="#" >Check my page for corporate events, bodypaintings and wall decor!</a> -->
-        </div>
+  <!-- ── PORTFOLIO GALLERY ─────────────────────────────── -->
+  <section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+    <div class="section-header fade-up">
+      <span class="overline script">A glimpse into the magic</span>
+      <h2 id="gallery-heading">Portfolio</h2>
+    </div>
+
+    <div class="gallery-filters fade-up" role="toolbar" aria-label="Filter portfolio by category">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="facepaint" aria-pressed="false">Face Painting</button>
+      <button class="filter-btn" data-filter="bodyart"   aria-pressed="false">Body Art</button>
+      <button class="filter-btn" data-filter="airbrush"  aria-pressed="false">Airbrush</button>
+      <button class="filter-btn" data-filter="belly"     aria-pressed="false">Belly Painting</button>
+      <button class="filter-btn" data-filter="mural"     aria-pressed="false">Murals</button>
+    </div>
+
+    <div class="masonry fade-up" id="gallery-grid" aria-live="polite" aria-label="Portfolio images">
+
+      <!-- Face Painting — 8 items -->
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 1">
+        <img src="/img/placeholder-fp-1.jpg" alt="Vibrant butterfly face painting design" loading="lazy" width="500" height="520">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 2">
+        <img src="/img/placeholder-fp-2.jpg" alt="Princess face painting for a birthday party" loading="lazy" width="500" height="420">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 3">
+        <img src="/img/placeholder-fp-3.jpg" alt="Tiger face painting design in vibrant orange and black" loading="lazy" width="500" height="600">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 4">
+        <img src="/img/placeholder-fp-4.jpg" alt="Superhero face painting for a children's event" loading="lazy" width="500" height="460">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 5">
+        <img src="/img/placeholder-fp-5.jpg" alt="Colorful unicorn face painting with glitter accents" loading="lazy" width="500" height="540">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 6">
+        <img src="/img/placeholder-fp-6.jpg" alt="Floral face art with intricate details" loading="lazy" width="500" height="400">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 7">
+        <img src="/img/placeholder-fp-7.jpg" alt="Carnival-style face painting design" loading="lazy" width="500" height="490">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="facepaint" tabindex="0" role="button" aria-label="View face painting image 8">
+        <img src="/img/placeholder-fp-8.jpg" alt="Elegant half-face theatrical makeup" loading="lazy" width="500" height="450">
+        <div class="overlay"><span>Face Painting</span></div>
+      </div>
+
+      <!-- Body Art — 3 items -->
+      <div class="masonry-item" data-category="bodyart" tabindex="0" role="button" aria-label="View body art image 1">
+        <img src="/img/placeholder-body-1.jpg" alt="Full body painting competition artwork" loading="lazy" width="500" height="650">
+        <div class="overlay"><span>Body Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="bodyart" tabindex="0" role="button" aria-label="View body art image 2">
+        <img src="/img/placeholder-body-2.jpg" alt="Award-winning body art design with vibrant colors" loading="lazy" width="500" height="600">
+        <div class="overlay"><span>Body Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="bodyart" tabindex="0" role="button" aria-label="View body art image 3">
+        <img src="/img/placeholder-body-3.jpg" alt="Artistic body painting for brand activation event" loading="lazy" width="500" height="560">
+        <div class="overlay"><span>Body Painting</span></div>
+      </div>
+
+      <!-- Airbrush — 3 items -->
+      <div class="masonry-item" data-category="airbrush" tabindex="0" role="button" aria-label="View airbrush tattoo image 1">
+        <img src="/img/placeholder-airbrush-1.jpg" alt="Airbrush tattoo sleeve design in black and grey" loading="lazy" width="500" height="440">
+        <div class="overlay"><span>Airbrush Tattoo</span></div>
+      </div>
+      <div class="masonry-item" data-category="airbrush" tabindex="0" role="button" aria-label="View airbrush tattoo image 2">
+        <img src="/img/placeholder-airbrush-2.jpg" alt="Glitter airbrush tattoo with geometric pattern" loading="lazy" width="500" height="410">
+        <div class="overlay"><span>Airbrush Tattoo</span></div>
+      </div>
+      <div class="masonry-item" data-category="airbrush" tabindex="0" role="button" aria-label="View airbrush tattoo image 3">
+        <img src="/img/placeholder-airbrush-3.jpg" alt="Tribal airbrush tattoo on arm" loading="lazy" width="500" height="480">
+        <div class="overlay"><span>Airbrush Tattoo</span></div>
+      </div>
+
+      <!-- Belly Painting — 3 items -->
+      <div class="masonry-item" data-category="belly" tabindex="0" role="button" aria-label="View belly painting image 1">
+        <img src="/img/placeholder-belly-1.jpg" alt="Floral belly painting for maternity photo shoot" loading="lazy" width="500" height="510">
+        <div class="overlay"><span>Belly Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="belly" tabindex="0" role="button" aria-label="View belly painting image 2">
+        <img src="/img/placeholder-belly-2.jpg" alt="Custom belly painting with baby-themed artwork" loading="lazy" width="500" height="460">
+        <div class="overlay"><span>Belly Painting</span></div>
+      </div>
+      <div class="masonry-item" data-category="belly" tabindex="0" role="button" aria-label="View belly painting image 3">
+        <img src="/img/placeholder-belly-3.jpg" alt="Artistic maternity belly painting with galaxy theme" loading="lazy" width="500" height="530">
+        <div class="overlay"><span>Belly Painting</span></div>
+      </div>
+
+      <!-- Murals — 3 items -->
+      <div class="masonry-item" data-category="mural" tabindex="0" role="button" aria-label="View mural image 1">
+        <img src="/img/placeholder-mural-1.jpg" alt="Custom wall mural with vibrant tropical colors" loading="lazy" width="500" height="420">
+        <div class="overlay"><span>Mural</span></div>
+      </div>
+      <div class="masonry-item" data-category="mural" tabindex="0" role="button" aria-label="View mural image 2">
+        <img src="/img/placeholder-mural-2.jpg" alt="Commercial wall art mural for office space" loading="lazy" width="500" height="380">
+        <div class="overlay"><span>Mural</span></div>
+      </div>
+      <div class="masonry-item" data-category="mural" tabindex="0" role="button" aria-label="View mural image 3">
+        <img src="/img/placeholder-mural-3.jpg" alt="Nursery wall mural with whimsical animals" loading="lazy" width="500" height="450">
+        <div class="overlay"><span>Mural</span></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ── SERVICES ──────────────────────────────────────── -->
+  <section id="services" class="services-section" aria-labelledby="services-heading">
+    <div class="section-header fade-up">
+      <span class="overline script">What I offer</span>
+      <h2 id="services-heading">Services For Every Occasion</h2>
+    </div>
+    <div class="services-grid">
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-facepaint.jpg" alt="Children enjoying face painting at a birthday party" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Face Painting</h3>
+          <p>Butterflies, superheroes, princesses, animals — vibrant and intricate designs that make kids (and adults!) light up.</p>
+          <div class="card-tags">
+            <span class="card-tag">Kids Parties</span>
+            <span class="card-tag">Festivals</span>
+            <span class="card-tag">Corporate</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-bodypaint.jpg" alt="Award-winning full body painting artwork" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Body Painting</h3>
+          <p>Award-winning full body art for events, competitions, brand activations, and editorial shoots. Anna's signature specialty.</p>
+          <div class="card-tags">
+            <span class="card-tag">Brand Events</span>
+            <span class="card-tag">Photo Shoots</span>
+            <span class="card-tag">Competitions</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-airbrush.jpg" alt="Airbrush and glitter tattoo designs on arm" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Airbrush &amp; Glitter Tattoos</h3>
+          <p>Water-resistant designs lasting 3&ndash;5 days. Perfect for pool parties, hot days, and events where you want art that lasts.</p>
+          <div class="card-tags">
+            <span class="card-tag">Pool Parties</span>
+            <span class="card-tag">Teens</span>
+            <span class="card-tag">All Ages</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-belly.jpg" alt="Belly painting for maternity and baby shower" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Belly Painting</h3>
+          <p>Celebrate your pregnancy with a custom belly masterpiece — a beautiful way to create lasting memories and maternity photos.</p>
+          <div class="card-tags">
+            <span class="card-tag">Maternity</span>
+            <span class="card-tag">Baby Showers</span>
+            <span class="card-tag">Photo Shoots</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-mural.jpg" alt="Custom wall mural painted by Anna Body Art" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Murals &amp; Wall Art</h3>
+          <p>Custom murals and wall decor that transform blank spaces into vibrant expressions of personality and color.</p>
+          <div class="card-tags">
+            <span class="card-tag">Residential</span>
+            <span class="card-tag">Commercial</span>
+            <span class="card-tag">Nurseries</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="#book" class="service-card fade-up">
+        <div class="card-img">
+          <img src="/img/placeholder-svc-events.jpg" alt="Live art entertainment at a corporate event" loading="lazy" width="600" height="440">
+        </div>
+        <div class="card-body">
+          <h3>Event Entertainment</h3>
+          <p>Live art entertainment for corporate events, festivals, and brand activations. Turn heads and create unforgettable moments.</p>
+          <div class="card-tags">
+            <span class="card-tag">Corporate</span>
+            <span class="card-tag">Festivals</span>
+            <span class="card-tag">Activations</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────────────── -->
+  <section id="about" class="about-outer" aria-labelledby="about-heading">
+    <div class="about-inner fade-up">
+      <div class="about-img-wrap">
+        <div class="about-img-shape float">
+          <img src="/img/placeholder-anna-portrait.jpg"
+               alt="Anna, face and body painting artist, working at an event in Austin TX"
+               loading="lazy" width="600" height="750">
+        </div>
+        <div class="about-accent-blob float-slow" aria-hidden="true"></div>
+      </div>
+      <div class="about-text">
+        <span class="overline script">The artist behind the brush</span>
+        <h2 id="about-heading">Meet Anna</h2>
+        <p>An Italian artist now calling Austin home, Anna discovered her passion for face and body painting in 2014 with a simple 10-color kit. Within a year she was competing internationally — and hasn't stopped since.</p>
+        <p>She's placed at the <span class="highlight">World Bodypainting Championship in Austria</span>, competed in South Korea, and taken 1st place at the Texas Body Paint Festival. Her client roster includes <span class="highlight">Google, EA Games, Warner Bros, the Westin, and the Hilton</span>.</p>
+        <p>But what drives Anna isn't trophies — it's the moment a child sees themselves transformed into a superhero, or a brand sees their vision come alive on skin. Every brushstroke tells a story.</p>
+        <p class="about-press">Featured in <em>Huffington Post</em> &middot; <em>ABC News</em> &middot; FDA-compliant, skin-safe products only</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── REVIEWS ─────────────────────────────────────────── -->
+  <section id="reviews" class="reviews-section" aria-labelledby="reviews-heading">
+    <div class="paint-blob" style="width:300px;height:300px;background:var(--magenta);top:-80px;left:-80px;" aria-hidden="true"></div>
+    <div class="paint-blob" style="width:250px;height:250px;background:var(--teal);bottom:-80px;right:-60px;"  aria-hidden="true"></div>
+
+    <div class="section-header fade-up">
+      <span class="overline script">Happy clients, real words</span>
+      <h2 id="reviews-heading">What People Are Saying</h2>
+    </div>
+
+    <div class="reviews-track fade-up">
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;Anna was incredible from start to finish. Extremely kind, professional, and made the experience extra special for our children.&rdquo;</blockquote>
+        <div class="review-author">Estrella O.</div>
+        <div class="review-source">GigSalad</div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;She did face paint at our annual Christmas party and was amazing! She even did a lace design to match someone's dress. Beautiful!&rdquo;</blockquote>
+        <div class="review-author">Catherine D.</div>
+        <div class="review-source">Thumbtack</div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>&ldquo;Anna did glitter tattoos and face painting at my daughter's birthday party. She was amazing! Will absolutely hire again.&rdquo;</blockquote>
+        <div class="review-author">Laura C.</div>
+        <div class="review-source">GigSalad</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── BOOKING CTA ────────────────────────────────────── -->
+  <section id="book" class="booking-section" aria-labelledby="booking-heading">
+    <div class="booking-card fade-up">
+      <div class="section-header">
+        <span class="overline script">Let&rsquo;s create something magical</span>
+        <h2 id="booking-heading">Book Anna For Your Event</h2>
+        <p>Fill in a few details and Anna will get back to you with a custom quote&nbsp;&mdash; usually within 24&nbsp;hours.</p>
+      </div>
+      <div class="booking-cta-wrap">
+        <!-- TODO: replace href with the real Google Form URL before launch -->
+        <a href="https://PLACEHOLDER-GOOGLE-FORM-URL.com"
+           class="btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          <!-- calendar icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          Request a Quote
+        </a>
+      </div>
+      <div class="booking-contact">
+        Prefer to talk? Call or text&nbsp;<a href="tel:+17374842082">(737)&nbsp;484&#8209;2082</a><br>
+        or email&nbsp;<a href="mailto:annabodyart@gmail.com">annabodyart@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main><!-- /main -->
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+<footer class="site-footer">
+  <span class="footer-logo script">Anna Body Art</span>
+
+  <nav class="footer-social" aria-label="Social media links">
+    <a href="https://www.instagram.com/annabodyart/"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Follow Anna Body Art on Instagram">
+      <!-- Instagram icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/anna.chapovalov"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Follow Anna Body Art on Facebook">
+      <!-- Facebook icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+           aria-hidden="true">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    </a>
+  </nav>
+
+  <p class="footer-meta">Austin, TX &middot; Available to travel &middot; FDA-compliant products &middot; Fully insured</p>
+  <p>&copy; 2026 Anna Body Art &middot; <a href="mailto:annabodyart@gmail.com">annabodyart@gmail.com</a> &middot; <a href="tel:+17374842082">(737)&nbsp;484&#8209;2082</a></p>
+</footer>
+
+<!-- =====================================================
+     LIGHTBOX
+     ===================================================== -->
+<div id="lightbox"
+     class="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Image viewer"
+     aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close image viewer">&times;</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#8249;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" aria-label="Next image">&#8250;</button>
+  <div class="lightbox-caption" id="lightbox-caption" aria-live="polite"></div>
+</div>
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── NAV: scroll shrink ────────────────────────────── */
+  var nav = document.getElementById('site-nav');
+  var lastScroll = 0;
+  window.addEventListener('scroll', function () {
+    var y = window.scrollY || window.pageYOffset;
+    if (y > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+    lastScroll = y;
+  }, { passive: true });
+
+  /* ── NAV: mobile toggle ────────────────────────────── */
+  var toggle = document.getElementById('nav-toggle');
+  var menu   = document.getElementById('nav-menu');
+  toggle.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+  });
+  // Close when any nav link is activated
+  menu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation menu');
+    });
+  });
+  // Close on outside click
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target)) {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ── FADE-UP on scroll (IntersectionObserver) ──────── */
+  var fadeEls = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(function (el) { io.observe(el); });
+  } else {
+    // Fallback for very old browsers
+    fadeEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ── GALLERY FILTER ────────────────────────────────── */
+  var filterBtns = document.querySelectorAll('.filter-btn');
+  var galleryItems = document.querySelectorAll('.masonry-item');
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var filter = this.getAttribute('data-filter');
+
+      // Update button states
+      filterBtns.forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+      this.classList.add('active');
+      this.setAttribute('aria-pressed', 'true');
+
+      // Show / hide items
+      galleryItems.forEach(function (item) {
+        var match = filter === 'all' || item.getAttribute('data-category') === filter;
+        item.classList.toggle('is-hidden', !match);
+      });
+    });
+  });
+
+  /* ── LIGHTBOX ──────────────────────────────────────── */
+  var lightbox      = document.getElementById('lightbox');
+  var lbImg         = document.getElementById('lightbox-img');
+  var lbCaption     = document.getElementById('lightbox-caption');
+  var lbClose       = lightbox.querySelector('.lightbox-close');
+  var lbPrev        = lightbox.querySelector('.lightbox-prev');
+  var lbNext        = lightbox.querySelector('.lightbox-next');
+  var currentIdx    = 0;
+  var lastFocused   = null;
+
+  function visibleItems() {
+    return Array.prototype.filter.call(galleryItems, function (item) {
+      return !item.classList.contains('is-hidden');
+    });
+  }
+
+  function openLightbox(idx) {
+    var items = visibleItems();
+    if (!items.length) return;
+    currentIdx = ((idx % items.length) + items.length) % items.length;
+    var item   = items[currentIdx];
+    var img    = item.querySelector('img');
+    var label  = item.querySelector('.overlay span');
+    lbImg.src           = img.src;
+    lbImg.alt           = img.alt;
+    lbCaption.textContent = label ? label.textContent : '';
+    lightbox.classList.add('active');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  function navigate(dir) {
+    openLightbox(currentIdx + dir);
+  }
+
+  // Open on click / keyboard
+  galleryItems.forEach(function (item, idx) {
+    item.addEventListener('click', function () {
+      lastFocused = item;
+      var items = visibleItems();
+      var visIdx = items.indexOf(item);
+      if (visIdx >= 0) openLightbox(visIdx);
+    });
+    item.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        lastFocused = item;
+        var items = visibleItems();
+        var visIdx = items.indexOf(item);
+        if (visIdx >= 0) openLightbox(visIdx);
+      }
+    });
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click',  function () { navigate(-1); });
+  lbNext.addEventListener('click',  function () { navigate( 1); });
+
+  // Keyboard navigation inside lightbox
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape')      { closeLightbox(); }
+    if (e.key === 'ArrowLeft')   { navigate(-1); }
+    if (e.key === 'ArrowRight')  { navigate( 1); }
+  });
+
+  // Close on backdrop click
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  /* ── SMOOTH SCROLL polyfill for older browsers ─────── */
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var id = this.getAttribute('href');
+      if (id === '#') return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      // Update URL hash without re-scrolling
+      if (history.pushState) history.pushState(null, '', id);
+    });
+  });
+
+}());
+</script>
+
+</body>
+</html>
