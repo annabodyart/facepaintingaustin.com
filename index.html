@@ -81,13 +81,10 @@
   All image src values use /img/placeholder-XXX.jpg paths.
   When Anna provides real images, replace each path below.
 
-  HERO GRID (right column, 6 cells):
-    /img/placeholder-hero-1.jpg   — tall, face painting portrait
-    /img/placeholder-hero-2.jpg   — square, event scene
-    /img/placeholder-hero-3.jpg   — square, airbrush tattoo
-    /img/placeholder-hero-4.jpg   — tall, body painting competition
-    /img/placeholder-hero-5.jpg   — square, belly painting
-    /img/placeholder-hero-6.jpg   — square, creative face art
+  HERO GRID (right column, 3 cells stacked):
+    /img/placeholder-hero-1.jpg   — face painting portrait
+    /img/placeholder-hero-2.jpg   — body painting / event scene
+    /img/placeholder-hero-3.jpg   — airbrush tattoo or belly painting
 
   GALLERY (20 items):
     Face Painting (8):
@@ -397,18 +394,21 @@ button:focus:not(:focus-visible) {
    HERO
    ===================================================== */
 .hero {
-  min-height: 100vh;
+  height: 55vh;
+  min-height: 480px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   overflow: hidden;
+  /* push section below fixed nav */
+  margin-top: 62px;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 60px 80px;
+  padding: 40px 60px 40px;
   position: relative;
   z-index: 2;
 }
@@ -441,20 +441,17 @@ button:focus:not(:focus-visible) {
   flex-wrap: wrap;
 }
 
-/* Hero image grid */
-.hero-visual {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--blush), var(--rose));
-}
+/* Hero image grid — 2 cols: left cell spans full height, right has 2 stacked */
 .hero-img-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
   gap: 8px;
   padding: 8px;
   height: 100%;
-  min-height: 100vh;
+}
+.img-cell.tall {
+  grid-row: span 2;
 }
 .img-cell {
   border-radius: 12px;
@@ -471,9 +468,7 @@ button:focus:not(:focus-visible) {
 .img-cell:hover img {
   transform: scale(1.05);
 }
-.img-cell.tall {
-  grid-row: span 2;
-}
+
 
 /* =====================================================
    CREDENTIALS RIBBON
@@ -1049,10 +1044,15 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 900px) {
   /* Hero collapses to single column */
-  .hero { grid-template-columns: 1fr; }
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+    margin-top: 58px;
+  }
   .hero-visual { display: none; }
   .hero-content {
-    padding: 120px 28px 64px;
+    padding: 40px 28px 48px;
     text-align: center;
     align-items: center;
   }
@@ -1191,15 +1191,6 @@ button:focus:not(:focus-visible) {
         </div>
         <div class="img-cell">
           <img src="/img/placeholder-hero-3.jpg" alt="" width="400" height="300">
-        </div>
-        <div class="img-cell tall">
-          <img src="/img/placeholder-hero-4.jpg" alt="" width="400" height="600">
-        </div>
-        <div class="img-cell">
-          <img src="/img/placeholder-hero-5.jpg" alt="" width="400" height="300">
-        </div>
-        <div class="img-cell">
-          <img src="/img/placeholder-hero-6.jpg" alt="" width="400" height="300">
         </div>
       </div>
     </div>
