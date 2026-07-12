@@ -732,29 +732,76 @@
     }
     @media (max-width: 760px) {
       .nav-links a:not(.button) { display: none; }
-      .hero { padding-top: 88px; }
+      .hero {
+        padding: 88px 10px 24px;
+        gap: 16px;
+      }
       .hero-copy { min-height: auto; padding: 42px 0 16px; }
-      .hero-collage,
+      .hero-collage {
+        grid-template-columns: 1.08fr .92fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px;
+        min-height: clamp(430px, 116vw, 620px);
+      }
+      .photo-tile {
+        border-radius: 16px;
+        margin: 5px;
+      }
+      .photo-tile.big {
+        grid-row: span 2;
+        border-radius: 20px;
+      }
+      .photo-label {
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        flex-wrap: wrap;
+      }
+      .photo-label b,
+      .pill {
+        min-height: 28px;
+        padding: 7px 9px;
+        font-size: 9px;
+      }
       .mode-grid,
       .gallery,
       .callouts,
       .form-row {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
       }
-      .hero-collage { min-height: auto; }
-      .photo-tile,
-      .photo-tile.big,
-      .gallery-item,
-      .gallery-item.tall,
+      .mode-card {
+        min-height: clamp(260px, 70vw, 390px);
+        border-radius: 16px;
+      }
+      .mode-body {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+      }
+      .mode-body h3 { font-size: 20px; }
+      .mode-body p { font-size: 12px; }
+      .gallery-item {
+        min-height: clamp(210px, 56vw, 300px);
+        border-radius: 14px;
+        margin: 5px;
+      }
+      .gallery-item.tall {
+        grid-row: span 2;
+        min-height: clamp(430px, 114vw, 610px);
+      }
       .gallery-item.wide {
-        grid-row: auto;
-        grid-column: auto;
-        min-height: 310px;
+        grid-column: span 2;
       }
-      .hero-stats { grid-template-columns: 1fr; }
+      .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .hero-stats .stat:last-child { grid-column: span 2; }
       h1 { font-size: clamp(58px, 19vw, 92px); }
       h2 { font-size: clamp(44px, 16vw, 72px); }
-      .section { padding-block: 54px; }
+      .section {
+        padding: 54px 10px;
+      }
       .artist-photo { min-height: 420px; }
       .site-footer { grid-template-columns: 1fr; }
       .footer-links { justify-content: start; }
@@ -999,7 +1046,7 @@
           <textarea name="details" placeholder="Guest count, timing, theme, venue, and anything that helps Anna match the energy."></textarea>
         </label>
         <button class="button primary" type="submit">Email the request</button>
-        <p class="form-note">This first version opens your email app with the event details ready to send. A backend form can be added later.</p>
+        
       </form>
     </section>
   </main>
