@@ -1,0 +1,44 @@
+# macOS / filesystem
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build and generated output
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local servers / temporary files
+.tmp/
+tmp/
+*.tmp
+
+# OS thumbnails
+Thumbs.db
+
+# Optional deployment/tooling state
+.vercel/
+.netlify/
