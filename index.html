@@ -76,7 +76,10 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
     body {
       margin: 0;
       background: var(--night);
@@ -805,6 +808,90 @@
       .artist-photo { min-height: 420px; }
       .site-footer { grid-template-columns: 1fr; }
       .footer-links { justify-content: start; }
+    }
+    @media (max-width: 500px) {
+      .nav {
+        gap: 8px;
+        padding: 12px 10px;
+      }
+      .brand {
+        font-size: clamp(24px, 8vw, 30px);
+        text-shadow: 2px 2px 0 var(--hot);
+      }
+      .nav-links .button {
+        min-height: 40px;
+        padding: 10px 12px;
+        font-size: 0;
+        letter-spacing: .04em;
+      }
+      .nav-links .button::after {
+        content: "Book";
+        font-size: 10px;
+      }
+      .hero {
+        padding-inline: 6px;
+      }
+      .hero-actions .button {
+        flex: 1 1 100%;
+        min-height: 44px;
+      }
+      .hero-collage {
+        gap: 2px;
+        min-height: clamp(390px, 112vw, 540px);
+      }
+      .mode-grid,
+      .gallery,
+      .callouts,
+      .form-row {
+        gap: 2px;
+      }
+      .photo-tile,
+      .gallery-item {
+        margin: 5px;
+      }
+      .photo-label {
+        gap: 6px;
+      }
+      .photo-label b,
+      .pill,
+      .gallery-item span {
+        font-size: 8px;
+        letter-spacing: .04em;
+      }
+      .mode-card {
+        min-height: clamp(220px, 64vw, 320px);
+      }
+      .mode-body h3 {
+        font-size: 17px;
+      }
+      .mode-body p {
+        font-size: 11px;
+      }
+      .gallery-item {
+        min-height: clamp(180px, 52vw, 260px);
+      }
+      .gallery-item.tall {
+        min-height: clamp(370px, 108vw, 530px);
+      }
+      h1 {
+        font-size: clamp(48px, 17vw, 74px);
+        text-shadow: 3px 3px 0 var(--violet);
+      }
+      h2 {
+        font-size: clamp(38px, 14vw, 60px);
+        text-shadow: 3px 3px 0 var(--violet);
+      }
+      .section {
+        padding-inline: 6px;
+      }
+      .filter-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+      .contact-chip {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+      }
     }
   </style>
 </head>
